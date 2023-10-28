@@ -7,10 +7,10 @@ REM - where yyyy: year, mm: month, dd: day
 REM - each version element must be in range [0, 65535]
 REM set NI_VERSION=2.3.2023.0624
 
-REM Adjust JAVA_HOME path as needed
-set JAVA_HOME=D:\Utils\jdk1.17.0
-set PATH=%JAVA_HOME%\bin;%PATH%
-set CLASSPATH=%JAVA_HOME%\lib
+REM Uncomment and adjust JAVA_HOME path if needed
+REM set JAVA_HOME=D:\Utils\jdk1.17.0
+REM set PATH=%JAVA_HOME%\bin;%PATH%
+REM set CLASSPATH=%JAVA_HOME%\lib
 
 REM Sanity checks...
 if not exist %JAVA_HOME%\bin\jpackage.exe (
