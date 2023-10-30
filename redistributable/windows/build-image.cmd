@@ -49,7 +49,7 @@ jpackage.exe ^
   --app-version "%NI_VERSION%" ^
   --description "Near Infinity" ^
   --icon "package/windows/NearInfinity.ico" || goto failed
-zip -r "NearInfinity-portable-win-%NI_VERSION%.zip" NearInfinity || goto failed
+zip.exe -qr "NearInfinity-portable-win-%NI_VERSION%.zip" NearInfinity || goto failed
 echo Portable archive successfully created: NearInfinity-portable-win-%NI_VERSION%.zip
 goto completed
 
