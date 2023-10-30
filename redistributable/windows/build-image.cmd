@@ -34,12 +34,12 @@ REM Expected version string format: Near Infinity vX.Y-yyyymmdd
 REM Deviations from the expected version format (e.g. additional release suffixes) requires NI_VERSION to be overridden
 for /f "tokens=*" %%g in ('java -jar jar\NearInfinity.jar -version') do (set JAR_VERSION=%%g)
 
-REM Extracting file version for installer
+REM Extracting file version for portable
 set NI_VERSION=%JAR_VERSION:~-12,-9%.%JAR_VERSION:~-8,-4%.%JAR_VERSION:~-4%
 
 :build
-REM Building installer package
-echo Building Near Infinity installer (version %NI_VERSION%)...
+REM Building portable archive
+echo Building Near Infinity portable (version %NI_VERSION%)...
 jpackage.exe ^
   --type app-image ^
   --input "./jar" ^
