@@ -49,7 +49,8 @@ jpackage.exe ^
   --app-version "%NI_VERSION%" ^
   --description "Near Infinity" ^
   --icon "package/windows/NearInfinity.ico" || goto failed
-zip.exe -qr "NearInfinity-portable-win-%NI_VERSION%.zip" NearInfinity || goto failed
+REM zip.exe -qr "NearInfinity-portable-win-%NI_VERSION%.zip" NearInfinity || goto failed
+powershell -Command "& {Compress-Archive -Path .\NearInfinity -DestinationPath NearInfinity-portable-win-%NI_VERSION%.zip}" || goto failed
 echo Portable archive successfully created: NearInfinity-portable-win-%NI_VERSION%.zip
 goto completed
 
