@@ -39,8 +39,8 @@ which jpackage >/dev/null 2>&1 && (
         echo "Failed to create PKG archive"
         exit 1
     )
-    mv "NearInfinity-${NI_VERSION}.pkg" "NearInfinity-macos-${NI_VERSION}.pkg" || (
-        echo "Failed to rename PKG archive (NearInfinity-${NI_VERSION}.pkg -> NearInfinity-macos-${NI_VERSION}.pkg)"
+    mv "NearInfinity-${NI_VERSION}.pkg" "NearInfinity-macos-x86_64-${NI_VERSION}.pkg" || (
+        echo "Failed to rename PKG archive (NearInfinity-${NI_VERSION}.pkg -> NearInfinity-macos-x86_64-${NI_VERSION}.pkg)"
         exit 1
     )
 ) || (
