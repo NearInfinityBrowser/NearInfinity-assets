@@ -23,6 +23,9 @@ then
     NI_VERSION=$(java -jar "jar/NearInfinity.jar" -version 2>/dev/null | sed -E 's/^[^0-9]+//' | sed -E 's/-/./g')
 fi
 
+# Detecting system architecture
+NI_ARCH="$(uname -m)"
+
 # Building PKG archive
 which jpackage >/dev/null 2>&1 && (
     echo "Building Near Infinity PKG archive (version ${NI_VERSION})..."
@@ -39,8 +42,8 @@ which jpackage >/dev/null 2>&1 && (
         echo "Failed to create PKG archive"
         exit 1
     )
-    mv "NearInfinity-${NI_VERSION}.pkg" "NearInfinity-macos-x86_64-${NI_VERSION}.pkg" || (
-        echo "Failed to rename PKG archive (NearInfinity-${NI_VERSION}.pkg -> NearInfinity-macos-x86_64-${NI_VERSION}.pkg)"
+    mv "NearInfinity-${NI_VERSION}.pkg" "NearInfinity-macos-${NI_ARCH}-${NI_VERSION}.pkg" || (
+        echo "Failed to rename PKG archive (NearInfinity-${NI_VERSION}.pkg -> NearInfinity-macos-${NI_ARCH}-${NI_VERSION}.pkg)"
         exit 1
     )
 ) || (
