@@ -30,7 +30,7 @@ APPIMAGE_DIR="NearInfinity.AppDir"
 
 # URL of the appimagetool
 APPIMAGETOOL="appimagetool-${NI_ARCH}.AppImage"
-APPIMAGETOOL_URL="https://github.com/AppImage/AppImageKit/releases/latest/download/${APPIMAGETOOL}"
+APPIMAGETOOL_URL="https://github.com/AppImage/appimagetool/releases/download/continuous/${APPIMAGETOOL}"
 
 # Installing appimagetool
 wget "${APPIMAGETOOL_URL}" || ( echo "Could not download ${APPIMAGETOOL}."; return 1 )
