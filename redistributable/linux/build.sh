@@ -23,7 +23,7 @@ fi
 NI_ARCH="$(uname -m)"
 
 # Name of the AppImage file
-APPIMAGE_FILE="NearInfinity-${NI_ARCH}-${NI_VERSION}.AppImage"
+APPIMAGE_FILE="NearInfinity-linux-${NI_ARCH}-${NI_VERSION}.AppImage"
 
 # Base folder of the AppImage container
 APPIMAGE_DIR="NearInfinity.AppDir"
