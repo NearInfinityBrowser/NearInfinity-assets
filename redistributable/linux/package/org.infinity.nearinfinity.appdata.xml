@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+    <id>org.infinity.nearinfinity</id>
+    <metadata_license>CC0-1.0</metadata_license>
+    <project_license>LGPL-2.1</project_license>
+    <name>Near Infinity</name>
+    <summary>An Infinity Engine Resource Browser and Editor</summary>
+    <description>
+	<p>Near Infinity is an open source cross-platform browser and editor for resources of Infinity Engine games, such as Baldur's Gate, Icewind Dale or Planescape Torment.</p>
+    </description>
+    <developer id="com.github.nearinfinitybrowser.nearinfinity">
+	<name>Argent77</name>
+    </developer>
+    <content_rating type="oars-1.0" />
+    <launchable type="desktop-id">org.infinity.nearinfinity.desktop</launchable>
+    <url type="homepage">https://github.com/NearInfinityBrowser/NearInfinity</url>
+    <url type="bugtracker">https://github.com/NearInfinityBrowser/NearInfinity/issues</url>
+    <url type="help">https://github.com/NearInfinityBrowser/NearInfinity/wiki</url>
+    <screenshots>
+	<screenshot type="default">
+	    <image>https://raw.githubusercontent.com/NearInfinityBrowser/NearInfinity-assets/refs/heads/master/screenshots/ni-main-view-wmp.jpg</image>
+	</screenshot>
+    </screenshots>
+    <provides>
+	<id>org.infinity.nearinfinity.desktop</id>
+    </provides>
+</component>

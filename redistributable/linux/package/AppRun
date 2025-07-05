@@ -1,0 +1,4 @@
+#!/bin/bash
+HERE="$(dirname "$(readlink -f "${0}")")"
+export JAVA_HOME="$HERE/usr/lib/jre"
+"$JAVA_HOME/bin/java" -jar "$HERE/usr/bin/NearInfinity.jar" "$@"

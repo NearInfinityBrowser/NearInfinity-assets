@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Near Infinity
+Comment=An Infinity Engine Resource Browser and Editor
+Exec=AppRun %f
+Icon=org.infinity.nearinfinity
+Categories=Game;Java;
+Terminal=false
